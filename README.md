@@ -38,6 +38,31 @@ pip install -r requirements.txt
 
 ---
 
+## Датасет
+
+Датасет не хранится в репозитории — только в ClearML (после первого запуска `upload_dataset.py`).
+
+**Источник:** [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) (Kaggle)
+
+**Скачать и положить:**
+```
+Course work/
+└── data/
+    └── imdb.csv   ← сюда
+```
+
+**Ожидаемый формат CSV:**
+
+| review | sentiment |
+|---|---|
+| One of the other reviewers has mentioned... | positive |
+| A wonderful little production... | positive |
+| I thought this was a wonderful way... | negative |
+
+Колонки: `review` (текст отзыва) и `sentiment` (`positive` / `negative`). Файл с Kaggle уже в этом формате, переименовывать не нужно.
+
+---
+
 ## Запуск
 
 ### 1. Поднять ClearML Server
